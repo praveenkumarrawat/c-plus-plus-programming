@@ -1,0 +1,19 @@
+#include<iostream>
+using namespace std;
+class subtraction
+{
+    private:
+    int a,b;
+    public:
+    void sub();
+};
+void subtraction :: sub(){                             // :: scope resolution operator.
+    cout<<"\n Enter two number : ";
+    cin>>a>>b;
+    cout<<"Subtration : "<<a-b;
+}
+int main(){
+    subtraction aa;
+    aa.sub();
+return 0;
+}
