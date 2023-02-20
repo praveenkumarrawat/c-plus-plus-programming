@@ -1,0 +1,25 @@
+#include<iostream>
+using namespace std;
+class test
+{
+    private:
+    int a,b,c;
+    int *ptr1,*ptr2;
+    public:
+    void getdata(){
+        ptr1 = &a;
+        ptr2 =&b;
+        cout<<"Enter two integers : ";
+        cin>>a>>b;
+    }
+    void printdata(){
+        cout<<"C = "<<a+b<<endl;
+        cout<<"Pointer sum = :"<<(*ptr1)+(*ptr2);
+    }
+};   
+int main(){
+    test t;
+    t.getdata();
+    t.printdata();
+return 0;
+}
